@@ -78,44 +78,91 @@ short findFakecoin3(short cn[8])
     short fakeCoin = 8;
     if (cn[0] > cn[1])
     {
-        fakeCoin =1 ;
+        fakeCoin = 1;
     }
     else if (cn[1] > cn[2])
     {
-        fakeCoin =2 ;
+        fakeCoin = 2;
     }
     else if (cn[2] > cn[3])
     {
-        fakeCoin =3 ;
+        fakeCoin = 3;
     }
     else if (cn[3] > cn[4])
     {
-        fakeCoin =4 ;
+        fakeCoin = 4;
     }
     else if (cn[4] > cn[5])
     {
-        fakeCoin =5 ;
+        fakeCoin = 5;
     }
     else if (cn[5] > cn[6])
     {
-        fakeCoin =6 ;
+        fakeCoin = 6;
     }
     else if (cn[6] > cn[7])
     {
-        fakeCoin =7 ;
+        fakeCoin = 7;
     }
     else
-    { 
-        fakeCoin = 8; 
+    {
+        fakeCoin = 8;
     }
-    
+
 
 
     return fakeCoin;
 }
 
+    short FindFaceCoin4(cn[8]);
+    {
+        short fakecoin;
 
- int main()
+        short(coin 123) = cn[0] + cn[1] + cn[2];
+        short(coin 456) = cn[3] + cn[4] + cn[5];
+
+        if (coin123 > coin456);
+        {
+            if (cn[0] < cn[1]);
+            {
+                fakecoin = 1;
+            }
+            else if (cn[0] > cn[1]);
+            {
+                fakecoin = 2;
+            }
+            else if (cn[0] == cn[1]);
+            {
+                fakecoin = 3;
+            }
+
+        }
+        else if (coin123 < coin456);
+        {
+            if (cn[3] < cn[4]);
+            {
+                fakecoin = 4
+            }
+            else if (cn[3] > cn[4]);
+            {
+                fakecoin = 5
+            }
+            else if (cn[3] == cn[4]);
+            {
+                fakecoin = 6
+            }
+        }
+        else if (coin123 == coin456);
+            {
+                fakecoin = 7
+            }
+            {
+                fakecoin = 8
+            }
+        return = 0;
+    }
+
+ void main()
 {
     const short origin = 1;
 
@@ -162,6 +209,35 @@ short findFakecoin3(short cn[8])
      fakeCoin = findFakecoin3(coin);
      printf("coin %d is fake!\n", fakeCoin);
 
+     fakeCoin = findFakecoin4(coin);
+     printf("coin %d is fake!\n", fakeCoin);
+
+
 
 
 }
+
+
+
+
+
+
+
+   /* червяк у банци */
+
+void main()
+ {
+   printf("\n\n\n task2: \n");
+
+      void       bank = 8;
+      const int Fulltime = 30;
+
+      for (int i = 0; i < 30; i++)
+      {
+
+             bank = bank * 2;
+
+             printf("Time: %d  Warm: %d\n" i++ bank);
+      }
+     
+ }
