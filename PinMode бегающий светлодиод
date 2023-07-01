@@ -1,0 +1,33 @@
+void setup()
+{
+ pinMode(PORTD0, OUTPUT);
+ pinMode(PORTD1, OUTPUT);
+ pinMode(PORTD2, OUTPUT);
+ pinMode(PORTD3, OUTPUT);
+ pinMode(PORTD4, OUTPUT);
+ pinMode(PORTD5, OUTPUT);
+ pinMode(PORTD6, OUTPUT);
+ pinMode(PORTD7, OUTPUT);
+}
+
+int Flag = 1;
+
+void loop()
+{
+    if (Flag == 1)
+    {
+        Flag = 0;
+       
+        for (int i = 0; i < 8; i++)
+        {
+	    digitalWrite (i, HIGH);
+	    delay(100);
+	    //  galiu tokiu variantas (i, LOW);
+        }
+        for (int i = 7; i >= 0; i--)
+        {
+	    digitalWrite (i, LOW);
+	    delay(100);
+        }
+    } 
+}
